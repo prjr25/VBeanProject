@@ -45,7 +45,6 @@ const CafeCarousel = (props) => {
         return (
             <CarouselItem onExiting={() => setAnimating(true)} onExited={() => setAnimating(false)} key={item.src}>
                 <img src={item.src} alt={item.altText} />
-                <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
             </CarouselItem>
         );
     });
