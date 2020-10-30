@@ -1,7 +1,6 @@
 import React from 'react';
 
 
-//Font-awesome not working
 class Footer extends React.Component {
     render() {
         return (
