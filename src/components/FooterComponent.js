@@ -7,7 +7,7 @@ class Footer extends React.Component {
             <React.Fragment>
                 <footer className="site-footer">
                     <div className="container">
-                        <div className="row row-content">
+                        <div className="row row-content mt-5">
                             <div className="col-sm-4">
                                 <p>123 Patrick Blvd<br/>
                                 Las Vegas, NV 89142<br/>

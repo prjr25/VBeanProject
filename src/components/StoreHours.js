@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardText, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardBody, CardTitle } from 'reactstrap';
 
 class StoreHours extends React.Component {
 

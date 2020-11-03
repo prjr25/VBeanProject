@@ -1,4 +1,5 @@
 import React from 'react';
+import  Logo from './Logo';
 import { Jumbotron, Nav, Navbar, NavbarToggler, Collapse, NavItem, NavLink, Button } from 'reactstrap';
 
 
@@ -14,7 +15,7 @@ class Header extends React.Component{
 
     }
 
-    toggleNav(){
+    toggleNav() {
         this.setState({
             isNavOpen: !this.state.isNavOpen
         });
@@ -31,8 +32,8 @@ class Header extends React.Component{
                         <div classname="row">
                             <div className="col-sm-2">
                             </div> 
-                            <div className="col-4 col-sm-3 col-md-2 align-self-center">
-                                <img src=".../public/images/logos/vBeanLogo/png" className="img-fluid ml-2" alt="vBeanLogo" />
+                            <div className="col-4 col-sm-3 col-md-2 align-self-center" >
+                                <Logo />
                             </div>
                         </div>
                     </div>
