@@ -7,11 +7,11 @@ class Header extends React.Component{
     
     constructor(props) {
         super(props);
-        this.state= {
+        this.state = {
             isNavOpen: false,
         };
 
-        //this.toggleNav = this.toggelNav.bind(this);
+        this.toggleNav = this.toggleNav.bind(this);
 
     }
 
@@ -21,8 +21,7 @@ class Header extends React.Component{
         });
     }
 
-//logo not working
-//Navbar not populating
+//Navbar not toggling
     render() {
         return (
             <React.Fragment>
@@ -69,12 +68,12 @@ class Header extends React.Component{
                                         contact us
                                     </NavLink>
                                 </NavItem>
-                                <div className="col ml-auto">
+                            </Nav>
+                                <span className="ml-auto">
                                     <Button>
                                         <i className="fa fa-sign-in" /> Member Sign In
                                     </Button>
-                                </div>
-                            </Nav>
+                                </span>                            
                         </Collapse>
                     </div>
                 </Navbar>

@@ -13,9 +13,13 @@ function Home(props) {
                     <h3>Las Vegas' favorite vegan, organic cafe.</h3>
                     <p>Become a BeanHead member today and experience a new way to cafe.</p>
                 </div>
-            </div>    
-            <div className="m-auto carousel-images">
-                <CafeCarousel />
+            </div> 
+            <div className="container">   
+                <div className="row">
+                    <div className="m-auto carousel-images">
+                        <CafeCarousel />
+                    </div>
+                </div>
             </div>
             <div>
                 <div className="row row-content mt-2">

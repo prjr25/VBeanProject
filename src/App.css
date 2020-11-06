@@ -16,8 +16,9 @@ p {
 }
 
 .carousel-images {
-  max-width: 50%; 
+  max-width: 90%
 }
+
 
 #newsletterSignUp {
   background-color: rgba(57,55, 55, .10);
