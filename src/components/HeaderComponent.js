@@ -27,7 +27,7 @@ class Header extends React.Component{
         return (
             <React.Fragment>
 
-                <Jumbotron fluid>
+                <Jumbotron fluid className="mb-0">
                     <div className="container">
                         <div classname="row">
                             <div className="col-sm-2">
@@ -39,7 +39,7 @@ class Header extends React.Component{
                     </div>
                 </Jumbotron>
 
-                <Navbar dark sticky="top" expand="sm">
+                <Navbar color="dark" dark sticky="top" expand="sm" className="mt-0">
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav}/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
@@ -69,11 +69,11 @@ class Header extends React.Component{
                                         contact us
                                     </NavLink>
                                 </NavItem>
-                                <span className="navbar-text ml-auto">
+                                <div className="col ml-auto">
                                     <Button>
                                         <i className="fa fa-sign-in" /> Member Sign In
                                     </Button>
-                                </span>
+                                </div>
                             </Nav>
                         </Collapse>
                     </div>

@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators } from 'reactstrap';
+import "../App";
 
 const items = [
     {
-        src: "../public/images/cafe/cafe-counter.jpg",
+        src: "https://res.cloudinary.com/prjr25/image/upload/v1604631212/VBeanProject/images/cafe/cafe-counter_l7fkyc.jpg",
         altText: "Cafe counter"
     },
     {
-        src: "../public/images/cafe/cafe-counter.jpg",
+        src: "https://res.cloudinary.com/prjr25/image/upload/v1604631212/VBeanProject/images/cafe/cafe-dining-room-wds_ekqwqj.jpg",
         altText: "Cafe counter"
     },
     {
-        src: "../public/images/cafe/cafe-counter.jpg",
+        src: "https://res.cloudinary.com/prjr25/image/upload/v1604631217/VBeanProject/images/cafe/barista-pourover-wds_dg2fmf.jpg",
         altText: "Cafe counter"
     },
     {
-        src: "../public/images/cafe/cafe-counter.jpg",
+        src: "https://res.cloudinary.com/prjr25/image/upload/v1604631225/VBeanProject/images/drinks/lattes-wds_tzgdey.jpg",
         altText: "Cafe counter"
     }
 ];

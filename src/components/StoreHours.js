@@ -9,21 +9,21 @@ class StoreHours extends React.Component {
                 <Card>
                     <CardTitle className="card-header bg-dark text-white">Store Hours</CardTitle>
                         <CardBody>
-                            <dl class="row">
-                                <dt class="col-6">Sunday:</dt>
-                                <dd class="col-6">6:00am to 7:00pm</dd>
-                                <dt class="col-6">Monday:</dt>
-                                <dd class="col-6">5:00am to 8:00pm</dd>
-                                <dt class="col-6">Tuesday:</dt>
-                                <dd class="col-6">5:00am to 8:00pm</dd>
-                                <dt class="col-6">Wednesday:</dt>
-                                <dd class="col-6">5:00am to 8:00pm</dd>
-                                <dt class="col-6">Thursday:</dt>
-                                <dd class="col-6">5:00am to 8:00pm</dd>
-                                <dt class="col-6">Friday:</dt>
-                                <dd class="col-6">5:00am to 9:00pm</dd>
-                                <dt class="col-6">Saturday</dt>
-                                <dd class="col-6">6:00am to 9:00pm</dd>
+                            <dl className="row">
+                                <dt className="col-6">Sunday:</dt>
+                                <dd className="col-6">6:00am to 7:00pm</dd>
+                                <dt className="col-6">Monday:</dt>
+                                <dd className="col-6">5:00am to 8:00pm</dd>
+                                <dt className="col-6">Tuesday:</dt>
+                                <dd className="col-6">5:00am to 8:00pm</dd>
+                                <dt className="col-6">Wednesday:</dt>
+                                <dd className="col-6">5:00am to 8:00pm</dd>
+                                <dt className="col-6">Thursday:</dt>
+                                <dd className="col-6">5:00am to 8:00pm</dd>
+                                <dt className="col-6">Friday:</dt>
+                                <dd className="col-6">5:00am to 9:00pm</dd>
+                                <dt className="col-6">Saturday</dt>
+                                <dd className="col-6">6:00am to 9:00pm</dd>
                             </dl>
                         </CardBody>
                 </Card>

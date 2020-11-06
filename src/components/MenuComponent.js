@@ -67,6 +67,11 @@ class MainMenu extends React.Component {
         const beverages = BEVERAGES;
         const breakfast = BREAKFAST;
         const dinner = DINNER;
+        this.state = {
+            isBevOpen: false,
+            isBreakOpen: false,
+            isDinOpen: false,
+        }
 }
 
     render() {
