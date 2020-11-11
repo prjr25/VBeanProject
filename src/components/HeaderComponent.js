@@ -1,6 +1,7 @@
 import React from 'react';
 import  Logo from './Logo';
-import { Jumbotron, Nav, Navbar, NavbarToggler, Collapse, NavItem, NavLink, Button } from 'reactstrap';
+import { Jumbotron, Nav, Navbar, NavbarToggler, Collapse, NavItem, Button } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 
 class Header extends React.Component{
@@ -21,7 +22,6 @@ class Header extends React.Component{
         });
     }
 
-//Navbar not toggling
     render() {
         return (
             <React.Fragment>
@@ -42,33 +42,33 @@ class Header extends React.Component{
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav}/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/home">
-                                        home
-                                    </NavLink>                                        
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/about">
-                                        about
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/menus">
-                                        menus
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/shop">
-                                        shop
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/contactus">
-                                        contact us
-                                    </NavLink>
-                                </NavItem>
-                            </Nav>
+                                <Nav navbar>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/home">
+                                            home
+                                        </NavLink>                                        
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/about">
+                                            about
+                                        </NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/menus">
+                                            menus
+                                        </NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/shop">
+                                            shop
+                                        </NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink className="nav-link" to="/contactus">
+                                            contact us
+                                        </NavLink>
+                                    </NavItem>
+                                </Nav>
                                 <span className="ml-auto">
                                     <Button>
                                         <i className="fa fa-sign-in" /> Member Sign In

@@ -8,15 +8,15 @@ function Home(props) {
     return(
         <React.Fragment>
 
-            <div className="row row-content mt-2">
-                <div className="col-sm text-center">
+            <div className="row row-content">
+                <div className="col-sm text-center my-4">
                     <h3>Las Vegas' favorite vegan, organic cafe.</h3>
                     <p>Become a BeanHead member today and experience a new way to cafe.</p>
                 </div>
             </div> 
             <div className="container">   
                 <div className="row">
-                    <div className="m-auto carousel-images">
+                    <div className="col mx-auto carousel-images">
                         <CafeCarousel />
                     </div>
                 </div>

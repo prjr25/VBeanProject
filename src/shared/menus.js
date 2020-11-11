@@ -1,61 +1,61 @@
 export const MENUS = [
     {
-        value: 0,
-        name: beverages,
+        ID: 0,
+        name: 'Beverages',
         menu: [
             {
                 id: 0,
-                name: "Black Coffee",
-                size: "small",
+                name: "Small Black Coffee",
+                description: "12 oz. of our famous medium-roast house blend",
                 price: 1.75
             },
             {
                 id: 1,
-                name: "Black Coffee",
-                size: "large",
+                name: "Large Black Coffee",
+                description: "16 oz. of our famous medium-roast house blend",
                 price: 2.50
             },
             {
                 id: 2,
-                name: "Latte",
-                size: "small",
+                name: "Small Latte",
+                description: "12 oz. of steamed coconut milk with two shots of espresso",
                 price: 2.75
             },
             {
                 id: 3,
-                name: "Latte",
-                size: "large",
+                name: "Large Latte",
+                description: "16 oz. of steamed coconut milk with two shots of espresso",
                 price: 3.25
             },
             {
                 id: 4,
-                name: "Americano",
-                size: "small",
+                name: "Small Americano",
+                description: "Two shots of smooth espresso in 12 oz. of hot water",
                 price: 2.50
             },
             {
                 id: 5,
-                name: "Americano",
-                size: "large",
+                name: "Large Americano",
+                description: "Two shots of smooth espresso in 16 oz. of hot water",
                 price: 3.00
             },
             {
                 id: 6,
-                name: "Iced Coffee",
-                size: "small",
+                name: "Small Iced Coffee",
+                description: "12 oz. of our famous house blend brewed over ice",
                 price: 2.00
             },
             {
                 id: 7,
-                name: "Iced Coffee",
-                size: "large",
+                name: "Large Iced Coffee",
+                description: "16 oz. of our famous house blend brewed over ice",
                 price: 2.75
             }
         ]
     },
     {
-        value: 1,
-        name: breakfast,
+        ID: 1,
+        name: 'Breakfast',
         menu: [
             {
                 id: 0,
@@ -90,8 +90,8 @@ export const MENUS = [
         ]
     },
     {
-        value: 2,
-        name: dinner,
+        ID: 2,
+        name: 'Dinner',
         menu: [
             {
                 id: 0,

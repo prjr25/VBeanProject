@@ -51,7 +51,7 @@ const CafeCarousel = (props) => {
     });
 
     return (
-        <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+        <Carousel className="myCarousel" activeIndex={activeIndex} next={next} previous={previous}>
             <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
             {slides}
             <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />

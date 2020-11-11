@@ -15,9 +15,15 @@ p {
   color: darkgrey;
 }
 
-.carousel-images {
-  max-width: 90%
+.myCarousel img {
+  max-height: 700px;
 }
+
+.menu-header {
+  font-style: bold;
+  font-family: "Lucida Sans Unicode"
+}
+
 
 
 #newsletterSignUp {

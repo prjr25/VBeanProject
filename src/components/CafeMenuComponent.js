@@ -1,8 +1,7 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import BeverageMenu from './CafeMenus/BeverageMenuComponent';
-import BreakfastMenu from './CafeMenus/BreakfastMenuComponent';
-import  DinnerMenu from './CafeMenus/DinnerMenuComponent';
+import Menu from './Menu';
+import { MENUS } from '../shared/menus';
 
 class CafeMenu extends React.Component {
 
@@ -10,38 +9,38 @@ class CafeMenu extends React.Component {
         super(props);
         
         this.state = {
-            isBevOpen: false,
-            isBreakOpen: false,
-            isDinOpen: false,
+            menus: MENUS,
+            selectedMenu: 0,
         }
 }
 
-    ToggleBev() {
-        this.setState = {
-            isBevOpen: !this.state.isBevOpen,
-            isBreakOpen: false,
-            isDinOpen: false,
-        };
+    toggleSelectedMenu(val){
+        this.setState({
+            selectedMenu: val,
+        })
     }
 
     render() {
 
         return(
-            <div className="container mt-2">
-                <div className="row row-content mt-2">
+            <div className="container">
+                <div className="row row-content my-4">
                     <div className="col-sm text-center">
                         <h3>View Our Menus</h3>
                     </div>
                 </div> 
                 <div className="row justify-content-center">
-                    <Button className="m-1">Beverages</Button>
-                    <Button className="m-1">Breakfast</Button>
-                    <Button className="m-1">Lunch &amp; Dinner</Button>
+                    <Button className="btn btn-lg m-2" onClick={() => this.toggleSelectedMenu(0)}>Beverages</Button>
+                    <Button className="btn btn-lg m-2" onClick={() => this.toggleSelectedMenu(1)}>Breakfast</Button>
+                    <Button className="btn btn-lg m-2" onClick={() => this.toggleSelectedMenu(2)}>Lunch &amp; Dinner</Button>
                 </div>
-                <div>
-                    {/*<BeverageMenu /> */}
-                    {/*<BreakfastMenu /> */}
-                    {/*<DinnerMenu /> */}
+                <div className="container">
+                    <div className="text-center my-4">
+                        <h2 className="menu-header">{this.state.menus[this.state.selectedMenu].name}</h2>
+                    </div>
+                    <div className="row justify-content-center">
+                        <Menu selectedMenu={this.state.menus[this.state.selectedMenu]}/>
+                    </div>
                 </div>
             </div>
         )
@@ -49,3 +48,4 @@ class CafeMenu extends React.Component {
 }
 
 export default CafeMenu;
+
